@@ -1,0 +1,16 @@
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.deps.json
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.runtimeconfig.json
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.runtimeconfig.dev.json
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.csprojResolveAssemblyReference.cache
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.csproj.CoreCompileInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.AssemblyInfoInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.AssemblyInfo.cs
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\obj\Debug\netcoreapp2.0\WordSmith.WebApi.Tests.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.dll
+E:\Code\git\WordSmith\WordSmith.WebApi.Tests\bin\Debug\netcoreapp2.0\WordSmith.WebApi.pdb

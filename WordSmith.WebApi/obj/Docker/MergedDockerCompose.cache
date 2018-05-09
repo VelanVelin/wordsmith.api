@@ -1,0 +1,15 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  wordsmith.webapi:
+    build:
+      context: E:\Code\git\WordSmith\WordSmith.WebApi
+      dockerfile: WordSmith.WebApi\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: wordsmith.webapi
+    ports:
+    - 80/tcp
+version: '3.0'

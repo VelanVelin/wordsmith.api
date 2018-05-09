@@ -1,0 +1,11 @@
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.csproj.CoreCompileInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.AssemblyInfoInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.AssemblyInfo.cs
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2.0\WordSmith.DataModel.deps.json
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2.0\WordSmith.DataModel.dll
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2.0\WordSmith.DataModel.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2.0\WordSmith.WebApi.dll
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2.0\WordSmith.WebApi.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.csprojResolveAssemblyReference.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.dll
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.pdb

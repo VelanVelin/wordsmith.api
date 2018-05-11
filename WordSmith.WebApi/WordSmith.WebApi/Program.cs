@@ -14,7 +14,14 @@ namespace WordSmith.WebApi
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            ILoggerFactory loggerFactory = new LoggerFactory()
+                .AddConsole()
+                .AddDebug();
+            ILogger logger = loggerFactory.CreateLogger<Program>();
+            logger.LogInformation(
+                "This is a test of the emergency broadcast system.");
+        
+        BuildWebHost(args).Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

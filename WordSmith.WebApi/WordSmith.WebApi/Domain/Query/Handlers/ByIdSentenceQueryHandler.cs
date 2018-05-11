@@ -7,18 +7,18 @@ using WordSmith.WebApi.Models.ReadModel;
 
 namespace WordSmith.WebApi.Domain.Query.Handlers
 {
-    public class SessionSentenceQueryHandler : IQueryHandler<BySessionSentenceQuery, IEnumerable<Sentence>>
+    public class ByIdSentenceQueryHandler : IQueryHandler<ByIdSentenceQuery, Sentence>
     {
         private readonly SentenceContext _sentenceContext;
 
-        public SessionSentenceQueryHandler(SentenceContext sentenceContext)
+        public ByIdSentenceQueryHandler(SentenceContext sentenceContext)
         {
             _sentenceContext = sentenceContext;
         }
 
-        public IEnumerable<Sentence> GetResponse(BySessionSentenceQuery query)
+        public Sentence GetResponse(ByIdSentenceQuery query)
         {
-            return _sentenceContext.Sentences.Where(x => x.SessionId.Equals(query.SessionGuid));
+            return _sentenceContext.Sentences.FirstOrDefault(x => x.Id == query.Id);
         }
     }
 }

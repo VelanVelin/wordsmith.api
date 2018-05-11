@@ -7,7 +7,5 @@ namespace WordSmith.WebApi.Domain.Command.Commands
     public class SaveSentenceCommand : ICommand<CommandResponse>
     {
         public Sentence Sentence { get; set; }
-
-        
     }
 }

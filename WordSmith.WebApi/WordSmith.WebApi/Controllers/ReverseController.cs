@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using WordSmith.WebApi.Domain.Command.Commands;
 using WordSmith.WebApi.Domain.Query.Queries;
 using WordSmith.WebApi.Models.ReadModel;
@@ -18,14 +19,24 @@ namespace WordSmith.WebApi.Controllers
     public class ReverseController : Controller
     {
         private readonly IQueryHandler<AllSentencesQuery, IEnumerable<Sentence>> _getAllQueryHandler;
-        private readonly IQueryHandler<SessionSentenceQuery, IEnumerable<Sentence>> _getSessionQueryHandler;
+        private readonly IQueryHandler<BySessionSentenceQuery, IEnumerable<Sentence>> _getSessionQueryHandler;
+        private readonly IQueryHandler<ByIdSentenceQuery, Sentence> _getByIdQueryHandler;
         private readonly ICommandHandler<SaveSentenceCommand, CommandResponse> _createCommandHandler;
+        private readonly ILogger<ReverseController> _logger;
 
-        public ReverseController(IQueryHandler<AllSentencesQuery, IEnumerable<Sentence>> getAllQueryHandler, IQueryHandler<SessionSentenceQuery, IEnumerable<Sentence>> getSessionQueryHandler, ICommandHandler<SaveSentenceCommand, CommandResponse> createCommandHandler)
+        public ReverseController(
+            IQueryHandler<AllSentencesQuery, IEnumerable<Sentence>> getAllQueryHandler, 
+            IQueryHandler<BySessionSentenceQuery, IEnumerable<Sentence>> getSessionQueryHandler, 
+            IQueryHandler<ByIdSentenceQuery, Sentence> getByIdQueryHandler, 
+            ICommandHandler<SaveSentenceCommand, CommandResponse> createCommandHandler, 
+            ILogger<ReverseController> logger)
         {
             _getAllQueryHandler = getAllQueryHandler;
             _getSessionQueryHandler = getSessionQueryHandler;
+            _getByIdQueryHandler = getByIdQueryHandler;
             _createCommandHandler = createCommandHandler;
+            _logger = logger;
+            
         }
 
         // GET: api/Reverse
@@ -40,35 +51,67 @@ namespace WordSmith.WebApi.Controllers
         [HttpGet("{sessionId}")]
         public IActionResult GetBySessionId(string sessionId)
         {
-            return Ok(_getSessionQueryHandler.GetResponse(new SessionSentenceQuery()
+            try
             {
-                SessionGuid = new Guid(sessionId)
-            }));
+                return Ok(_getSessionQueryHandler.GetResponse(new BySessionSentenceQuery()
+                {
+                    SessionGuid = new Guid(sessionId)
+                }));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500);
+            }
         }
 
+        // GET: api/Reverse/12
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            try
+            {
+                _logger.LogWarning("IN GET BY ID!");
+                return Ok(_getByIdQueryHandler.GetResponse(new ByIdSentenceQuery()
+                {
+                    Id = id
+                }));
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500);
+            }
+        }
 
         // POST: api/Reverse
         [HttpPost]
         public IActionResult Post([FromBody] Sentence sentence)
         {
-            sentence.Reverese();
-            var response = _createCommandHandler.Execute(new SaveSentenceCommand()
+            try
             {
-                Sentence = sentence
-            });
-            if (response.Success)
-            {
-                sentence.Id = response.Id;
-                return Ok(sentence);
+                sentence.Reverese();
+                var response = _createCommandHandler.Execute(new SaveSentenceCommand()
+                {
+                    Sentence = sentence
+                });
+                if (response.Success)
+                {
+                    //sentence.Id = response.Id;
+                    return Ok(response.Id);
+                }
+                else
+                {
+                    _logger.LogError(response.Message);
+                    return StatusCode(500);
+                }
             }
-
-            var message = new HttpResponseMessage(HttpStatusCode.InternalServerError)
+            catch (Exception ex)
             {
-                Content = new StringContent(response.Message),
-                ReasonPhrase = "InternalServerError"
-            };
-            //throw new HttpResponseException(message);
-            return Ok();
+                _logger.LogError(ex, ex.Message);
+                return StatusCode(500);
+            }
+            
         }
     }
 }

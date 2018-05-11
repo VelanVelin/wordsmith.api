@@ -21,19 +21,12 @@ namespace WordSmith.WebApi.Models.ReadModel
 
         public void Reverese()
         {
-            try
+            if (string.IsNullOrEmpty(this.Text))
             {
-                if (string.IsNullOrEmpty(this.Text))
-                {
-                    throw new ArgumentException("Sentence.Text");
-                }
+                throw new ArgumentException("Sentence.Text");
+            }
 
-                this.Reversed = string.Join("", Regex.Split(this.Text, @"(\W)").Select(x => new string(x.Reverse().ToArray())).ToArray());
-            }
-            catch (Exception ex)
-            {
-                // to log
-            }
+            this.Reversed = string.Join("", Regex.Split(this.Text, @"(\W)").Select(x => new string(x.Reverse().ToArray())).ToArray());
         }
     }
 }

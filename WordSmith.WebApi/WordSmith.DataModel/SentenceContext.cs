@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WordSmith.WebApi.Models.ReadModel;
+using WordSmith.WebApi.Models.WriteModel;
 
 namespace WordSmith.DataModel
 {

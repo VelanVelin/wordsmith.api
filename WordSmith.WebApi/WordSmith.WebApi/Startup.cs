@@ -40,8 +40,7 @@ namespace WordSmith.WebApi
                 c.SwaggerDoc("v1", new Info { Title = "WordSmith API", Version = "v1" });
             });
 
-            //var connection = @"Server=(localdb)\mssqllocaldb;Database=WordSmith;Trusted_Connection=True;ConnectRetryCount=0";
-            var connection = @"Server=.\SQLEXPRESS;Initial Catalog=WordSmith;Integrated Security=True;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=WordSmith;Trusted_Connection=True;ConnectRetryCount=0";
             services.AddDbContext<SentenceContext>(options => options.UseSqlServer(connection));
 
             services.AddTransient<ICommandHandler<SaveSentenceCommand, CommandResponse>, SaveSentenceCommandHandler>();

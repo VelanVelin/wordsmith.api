@@ -8,3 +8,4 @@ E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Debug\netcoreapp2.0\
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Debug\netcoreapp2.0\WordSmith.WebApi.AssemblyInfo.cs
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Debug\netcoreapp2.0\WordSmith.WebApi.dll
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Debug\netcoreapp2.0\WordSmith.WebApi.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Debug\netcoreapp2.0\WordSmith.WebApi.csprojResolveAssemblyReference.cache

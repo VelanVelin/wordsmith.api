@@ -9,3 +9,4 @@ E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\bin\Debug\netcoreapp2
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.csprojResolveAssemblyReference.cache
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.dll
 E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.DataModel\obj\Debug\netcoreapp2.0\WordSmith.DataModel.csproj.CopyComplete

@@ -1,0 +1,11 @@
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\bin\Release\netcoreapp2.0\WordSmith.WebApi.deps.json
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\bin\Release\netcoreapp2.0\WordSmith.WebApi.runtimeconfig.json
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\bin\Release\netcoreapp2.0\WordSmith.WebApi.runtimeconfig.dev.json
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\bin\Release\netcoreapp2.0\WordSmith.WebApi.dll
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\bin\Release\netcoreapp2.0\WordSmith.WebApi.pdb
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.csprojResolveAssemblyReference.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.csproj.CoreCompileInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.AssemblyInfoInputs.cache
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.AssemblyInfo.cs
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.dll
+E:\Code\git\WordSmith\WordSmith.WebApi\WordSmith.WebApi\obj\Release\netcoreapp2.0\WordSmith.WebApi.pdb
